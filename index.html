@@ -9,25 +9,26 @@
 </head>
 
 <body class="body">
-    <button id="openRegisterBtn" class="openRegisterBtn" type="button">Зарегистрироваться</button>
+    <!-- <button id="openRegisterBtn" class="openRegisterBtn" type="button">Зарегистрироваться</button> -->
 
     <!-- Первое модальное окно -->
-    <dialog id="registerDialog" class="registerDialog">
-        <div class="registrationContent">
-            <button id="closeRegister" class="closeBtn" type="button">&times;</button>
-            <h3 class="registerTitle">Создать аккаунт</h3>
-            <form class="registrationForm">
-                <label for="name">Имя:</label>
-                <input id="name" name="name" type="text" placeholder="Введите имя" required>
-                <label for="surname">Фамилия:</label>
-                <input id="surname" name="surname" type="text" placeholder="Введите фамилию" required>
-                <label for="email">Email:</label>
-                <input id="email" name="email" type="email" placeholder="Email:" required>
-                <label for="password">Пароль:</label>
-                <input id="password" name="password" type="password" placeholder="Пароль:" minlength="8" required>
-                <button type="submit">Зарегистрироваться</button>
-            </form>
-        </div>
+    <!-- <dialog id="registerDialog" class="registerDialog"> -->
+    <div class="registrationContent">
+        <button id="closeRegisterBtn" class="closeRegisterBtn" type="button">&times;</button>
+        <h3 class="registerTitle">Создать аккаунт</h3>
+        <form class="registrationForm">
+            <label for="name">Имя:</label>
+            <input id="name" name="name" type="text" placeholder="Введите имя" required>
+            <label for="surname">Фамилия:</label>
+            <input id="surname" name="surname" type="text" placeholder="Введите фамилию" required>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="Email:" required>
+            <label for="password">Пароль:</label>
+            <input id="password" name="password" type="password" placeholder="Пароль:" minlength="8" required>
+
+        </form>
+        <button class="switchingBtn" type="submit">Зарегистрироваться</button>
+    </div>
     </dialog>
 
     <!-- Второе модальное окно -->
