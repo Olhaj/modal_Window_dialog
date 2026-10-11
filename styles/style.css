@@ -362,9 +362,10 @@ button {
   background: transparent;
 }
 
-/* .confirmationDialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.55);
-} */
+.registerDialog::backdrop,
+.confirmationDialog::backdrop {
+  background-color: rgb(0 0 0 / 55%);
+}
 
 .confirmationContent {
   position: relative;
