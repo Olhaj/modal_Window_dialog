@@ -5,10 +5,6 @@
   user-select: none;
 }
 
-body {
-  height: 100vh;
-}
-
 @keyframes body {
   0% {
     --x-0: 59%;
@@ -218,6 +214,7 @@ body {
 }
 
 body {
+  height: 100vh;
   --x-0: 59%;
   --y-0: 16%;
   --c-0: hsla(202, 100%, 52%, 1);
@@ -293,11 +290,7 @@ button {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #f4f1eb;
-}
-
-.registerDialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .registrationContent {
@@ -313,7 +306,7 @@ button {
 
 .closeRegisterBtn {
   position: absolute;
-  top: 25px;
+  top: 215px;
   right: 0;
   width: 30px;
   height: 30px;
@@ -356,24 +349,26 @@ button {
   background-color: green;
 }
 
-.registrationContent > .switchingBtn {
+.registrationForm > .switchingBtn {
   margin: 20px auto;
 }
 
 /* ============== Второе модальное окно ======== */
 .confirmationDialog {
-  padding: 0;
+  position: absolute;
+  top: 296px;
+  width: 100vw;
   border: none;
   background: transparent;
 }
 
-.confirmationDialog::backdrop {
+/* .confirmationDialog::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
-}
+} */
 
 .confirmationContent {
   position: relative;
-  top: 25%;
+  top: 50%;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(3, 1fr);
